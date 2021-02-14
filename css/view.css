@@ -1,0 +1,110 @@
+#container {
+
+    grid-area:container;  
+    
+    
+  
+}
+
+#name {
+
+    color:red;
+    font-weight: bold;
+    font-size:3em;
+}
+
+#testimonials {
+
+    font-size:2em;
+    font-weight: bold;
+   
+}
+
+.incontainer {
+    
+    text-align:center;
+    border:5px solid black;
+    width:1500px;
+    height:500px;     
+    max-width: 1500px;
+    border-radius:10px 10px 10px 10px;
+    box-shadow: 5px 10px;
+    padding: 10px;
+}
+
+#picture {
+
+    height:200px;
+    width:150px;
+    border-radius:50%;
+}
+.arrow {
+    
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 40px;
+    
+  }
+  
+  .right {
+
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+   
+  }
+  
+  .left {
+
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  .grid-container {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;    
+    grid-template-areas:    
+      'leftb container rightb';
+
+  }
+  
+  .rightb { 
+
+      grid-area: rightb; 
+        margin:auto;
+        
+    }
+  
+  .incontainer { 
+      
+    grid-area: incontainer;
+    margin:auto;
+   
+   }
+  
+  .leftb { 
+      grid-area: leftb; 
+    margin:auto;
+   
+    }
+  
+  .checked {
+      color:orange;
+  }
+
+  .unchecked {
+      color:white;
+  }
+
+  body {      
+      background: rgba(76, 175, 80, 0.3);
+  }
+
+  .header{
+      margin:auto;
+      text-align:center;
+      font-size:4em;
+  }
